@@ -18,12 +18,10 @@ def decode_dict(data, encoding='utf-8'):
         if isinstance(key, unicode):
             key = key.encode(encoding)
         if isinstance(value, unicode):
-            print value
             value = value.encode(encoding)
         if isinstance(value, list):
             value = decode_list(value, encoding)
         if isinstance(value, dict):
             value = decode_dict(value, encoding)
-        print key, value
         rv[key] = value
     return rv
