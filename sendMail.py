@@ -5,8 +5,8 @@ from email.mime.text import MIMEText
 
 def send_email(toList, subject, content):
     mail_host = 'smtp.163.com'
-    user = 'xuyingjie2543@163.com'
-    pwd = '12qwaszx'
+    user = '*******'
+    pwd = '*****'
     me = user
 
     msg = MIMEText(content)
